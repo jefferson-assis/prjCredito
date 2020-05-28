@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SaldoComponent } from './component/saldo';
+import { SaldoService } from './services';
 
 
 
@@ -10,6 +11,9 @@ import { SaldoComponent } from './component/saldo';
     CommonModule
   ], exports:[
     SaldoComponent
+  ],
+  providers: [
+    SaldoService
   ]
 })
 export class CreditoModule { }

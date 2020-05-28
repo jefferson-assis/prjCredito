@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SaldoService } from '../../services';
 
 @Component({
   selector: 'app-saldo',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./saldo.component.css']
 })
 export class SaldoComponent implements OnInit {
-
-  constructor() { }
+  private valor1: number;
+  constructor(private saldo: SaldoService) { }
 
   ngOnInit(): void {
+
+  }
+  calcula(valorInserido: number){
+    this.valor1 = this.saldo.saldo(this.valor1,valorInserido);
   }
 
+  get pegaValor(){
+    return this.valor1;
+  }
 }
