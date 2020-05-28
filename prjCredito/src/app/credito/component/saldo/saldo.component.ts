@@ -11,7 +11,7 @@ export class SaldoComponent implements OnInit {
   constructor(private saldo: SaldoService) { }
 
   ngOnInit(): void {
-
+    this.valor1 =10;
   }
   calcula(valorInserido: number){
     this.valor1 = this.saldo.saldo(this.valor1,valorInserido);
