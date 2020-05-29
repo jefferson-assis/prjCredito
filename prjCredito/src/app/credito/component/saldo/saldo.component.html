@@ -1,11 +1,11 @@
 <div class="row">
   <div class="col-12">
     <div class="jumbotron">
-      <h1>Creditos</h1>
+      <h1 class="text-center">Creditos</h1>
       <div class="row">
         <div class="col-12">
           <div class="form-group">
-            <label form="">Saldo</label>
+            <label form=""><b>Saldo</b></label>
             <input type="text" class="form-control" readonly [value]="pegaValor">
           </div>
         </div>
@@ -21,36 +21,48 @@
 <br>
 
 <div class="row">
-  <div class="col-12">
+  <div class="col-6">
     <div class="jumbotron">
-      <h1 class="text-center">Operações</h1>
+      <h5>Deposito:</h5>
       <div class="row">
-        <div class="col-12">
+        <div class="col-8">
           <div class="form-group">
-            <h4><b>Definida:</b></h4>
               <div class="row">
-                <div class="col-1">
-                  <button class="btn btn-primary btn-block "(click)="calcula(1)">1</button>
+                <div class="col-2">
+                  <button class="btn btn-primary "(click)="calcula(1)">1</button>
                 </div>
 
-                <div class="col-1">
-                  <button class="btn btn-primary btn-block "(click)="calcula(10)">10</button>
+                <div class="col-2">
+                  <button class="btn btn-primary "(click)="calcula(10)">10</button>
                 </div>
 
-                <div class="col-1">
-                  <button class="btn btn-primary btn-block "(click)="calcula(100)">100</button>
+                <div class="col-2">
+                  <button class="btn btn-primary "(click)="calcula(100)">100</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="jumbotron">
+      <h5>Saque:</h5>
+      <div class="row">
+        <div class="col-8">
+          <div class="form-group">
+              <div class="row">
+                <div class="col-2">
+                  <button class="btn btn-primary "(click)="calcula(-1)">1</button>
                 </div>
 
-                <div class="col-1">
-                  <button class="btn btn-primary btn-block "(click)="calcula(-1)">1</button>
+                <div class="col-2">
+                  <button class="btn btn-primary "(click)="calcula(-10)">10</button>
                 </div>
 
-                <div class="col-1">
-                  <button class="btn btn-primary btn-block "(click)="calcula(-10)">10</button>
-                </div>
-
-                <div class="col-1">
-                  <button class="btn btn-primary btn-block "(click)="calcula(-100)">100</button>
+                <div class="col-2">
+                  <button class="btn btn-primary "(click)="calcula(-100)">100</button>
                 </div>
               </div>
           </div>
@@ -59,7 +71,3 @@
     </div>
   </div>
 </div>
-
-
-
-
