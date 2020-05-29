@@ -9,15 +9,14 @@
             <input type="text" class="form-control" readonly [value]="pegaValor">
           </div>
         </div>
+        <div class="col-4">
+          <button class="btn btn-danger btn-block "(click)="calcula(-1)">Descontar</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-4">
-    <button class="btn btn-danger btn-block "(click)="calcula(-1)">Descontar</button>
-  </div>
-</div>
+     <h1 class="text-center">Operações</h1>
 <br>
 
 <div class="row">
@@ -54,15 +53,15 @@
           <div class="form-group">
               <div class="row">
                 <div class="col-2">
-                  <button class="btn btn-primary "(click)="calcula(-1)">1</button>
+                  <button class="btn btn-success "(click)="calcula(-1)">1</button>
                 </div>
 
                 <div class="col-2">
-                  <button class="btn btn-primary "(click)="calcula(-10)">10</button>
+                  <button class="btn btn-success "(click)="calcula(-10)">10</button>
                 </div>
 
                 <div class="col-2">
-                  <button class="btn btn-primary "(click)="calcula(-100)">100</button>
+                  <button class="btn btn-success "(click)="calcula(-100)">100</button>
                 </div>
               </div>
           </div>
